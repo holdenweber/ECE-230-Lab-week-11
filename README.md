@@ -12,6 +12,14 @@ In this lab, you’ve learned about edge sensitive circuits and explored some of
 | Question 3 | Your answers to the question | 25% |
 
 ## Lab Summary
+In this lab we learned how to implement a 
+D flip-flip, JK flip-flop, T flip-flop. We 
+We implemented edge-detection in verilog
+which check for a rising and falling edge on the
+clock. We recursively built models off of the
+D flip-flop to build JK and T flip-flops. We assigned
+an initial state value to hold the default state of
+the flip-flop. 
 
 ## Lab Questions
 
@@ -20,8 +28,9 @@ Edge sensitive circuits only respond at the moment the clock
 state changes between a rising state and falling state.  
 The output gets updated the second the clock state changed
 
-Level sensitive circuits only respond when the clock signal
-is 
+Level sensitive circuits always responds to the clock;
+responding for the whole duration of the clock being at 
+state 1. When the clock is 0, it does not respond.
 
 ### Why is it important to declare initial state?
 It is important to declare the initial state because when
